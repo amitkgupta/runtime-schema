@@ -11,8 +11,9 @@ const (
 )
 
 type LRPStopAuction struct {
-	ProcessGuid string `json:"process_guid"`
-	Index       int    `json:"index"`
+	ProcessGuid  string `json:"process_guid"`
+	Index        int    `json:"index"`
+	NumInstances int    `json:"num_instances"`
 
 	State     LRPStopAuctionState `json:"state"`
 	UpdatedAt int64               `json:"updated_at"`
