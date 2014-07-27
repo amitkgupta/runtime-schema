@@ -14,6 +14,7 @@ var _ = Describe("LRPStopAuction", func() {
     "process_guid":"some-guid",
     "index": 2,
     "num_instances":2,
+    "num_azs":4,
     "updated_at": 1138,
     "state": 1
   }`
@@ -23,6 +24,7 @@ var _ = Describe("LRPStopAuction", func() {
 			ProcessGuid:  "some-guid",
 			Index:        2,
 			NumInstances: 2,
+			NumAZs:       4,
 			State:        LRPStopAuctionStatePending,
 			UpdatedAt:    1138,
 		}
